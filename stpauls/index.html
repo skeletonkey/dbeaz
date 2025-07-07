@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>St Paul's Chapter - DBE of Arizona</title>
+    <meta name="description" content="St Paul's Chapter of the Daughters of the British Empire of Arizona. Serving East Valley Phoenix for 25+ Years.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../DBE in the USA_files/Website+Logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" type="text/css" href="../DBE in the USA_files/site.css">
+    <link rel="stylesheet" type="text/css" href="../DBE in the USA_files/5fc7a936d9b12c49-min.en-US.css">
+    
+    <!-- Font Loading -->
+    <script>document.documentElement.classList.add('wf-loading')</script>
+    <style>@keyframes fonts-loading { 0%, 99% { color: transparent; } } html.wf-loading * { animation: fonts-loading 3s; }</style>
+    
+    <style>
+        /* Navigation styles */
+        .simple-nav {
+            background: #fff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        .logo img {
+            height: 60px;
+        }
+        .nav-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .nav-menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 1rem 1.5rem;
+            display: block;
+            font-weight: 500;
+        }
+        .nav-menu a:hover {
+            color: #666;
+        }
+        
+        /* Main content styles */
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .chapter-header {
+            text-align: center;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 3rem 2rem;
+            margin: -2rem -2rem 3rem -2rem;
+            border-radius: 0 0 20px 20px;
+        }
+        
+        .chapter-title {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        
+        .chapter-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .dbe-motto {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+        
+        .section {
+            margin: 3rem 0;
+        }
+        
+        .section h2 {
+            color: #333;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-section {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .group-photo {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .group-photo img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .fundraiser-highlight {
+            background: #e8f5e8;
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 5px solid #4CAF50;
+            margin: 2rem 0;
+        }
+        
+        .support-section {
+            background: #fff3e0;
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 5px solid #ff9800;
+        }
+        
+        .support-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .support-section li {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .support-section li:before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+        }
+        
+        .events-section {
+            background: #f0f8ff;
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 5px solid #2196F3;
+        }
+        
+        .event-item {
+            background: white;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .event-title {
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        
+        .event-date {
+            color: #666;
+            font-weight: bold;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            text-align: center;
+            margin: 1rem 0;
+            transition: background 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background: #45a049;
+            color: white;
+        }
+        
+        .social-links {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            background: #f0f0f0;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: #e0e0e0;
+        }
+        
+        .contact-section {
+            text-align: center;
+            background: #f5f5f5;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .footer {
+            background: #333;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #666;
+            text-decoration: none;
+        }
+        
+        .back-link:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="simple-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../DBE in the USA_files/Website+Logo.png" alt="DBE Logo">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content">
+        <a href="../index.html" class="back-link">← Back to Home</a>
+        
+        <!-- Chapter Header -->
+        <div class="chapter-header">
+            <div class="dbe-motto">🕊️ "Not Ourselves but the Cause"</div>
+            <p>The DBE is a 501(c)(3) non-profit American society of women of British and Commonwealth of Nations birth or ancestry.</p>
+            <p>We share and promote our heritage while supporting local charities and our senior living facilities across the United States.</p>
+            
+            <h1 class="chapter-title">🌸 St Paul's Chapter of the DBE of Arizona</h1>
+            <p class="chapter-subtitle">Serving East Valley Phoenix for 25+ Years</p>
+        </div>
+
+        <!-- About Us Section -->
+        <section class="section">
+            <h2>🧑‍🤝‍🧑 About Us</h2>
+            <div class="about-section">
+                <p>We are the St Paul's Chapter of the Daughters of the British Empire and Commonwealth (DBE) of Arizona.</p>
+                <p>Our chapter was founded roughly 25 years ago. We're currently a group of 11 women located in and around the East Valley of Phoenix, Arizona.</p>
+                <p>We host bi-annual traditional afternoon teas to raise money for local charities and to support the DBE Homes for the elderly.</p>
+            </div>
+            
+            <!-- Group Photo -->
+            <div class="group-photo">
+                <img src="images/0F85EF78-70AA-4CCC-9290-9DB6DD41FB1C.jpeg" alt="St Paul's Chapter Group Photo">
+                <p><em>Members of the St Paul's Chapter</em></p>
+            </div>
+        </section>
+
+        <!-- Spring 2025 Fundraiser -->
+        <section class="section">
+            <h2>🍵 Spring 2025 Afternoon Tea Fundraiser</h2>
+            <div class="fundraiser-highlight">
+                <p><strong>Our Spring Afternoon Tea raised over $1,300 for the Arizona Foster Alliance!</strong></p>
+                <p>🔗 <a href="#" target="_blank">View the check presentation on Instagram</a></p>
+                
+                <div class="group-photo">
+                    <img src="images/F98349C2-F042-44D3-8581-98F89ECDE745.jpeg" alt="Spring 2025 Tea Fundraiser">
+                    <p><em>Spring 2025 Afternoon Tea Event</em></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support Our Fundraisers -->
+        <section class="section">
+            <h2>❤️ Support Our Fundraisers!</h2>
+            <div class="support-section">
+                <p>Every purchase supports the DBE's mission to serve others.</p>
+                <ul>
+                    <li>100% of proceeds go to charitable programs.</li>
+                    <li>We are a registered 501(c)(3) nonprofit.</li>
+                    <li>🧾 EIN: 30-0316122</li>
+                </ul>
+                <p><strong>Interested in making a donation?</strong> All funds raised go directly to the chosen charity at our next event!</p>
+            </div>
+        </section>
+
+        <!-- Upcoming Events -->
+        <section class="section">
+            <h2>📅 Upcoming Events</h2>
+            <div class="events-section">
+                <div class="event-item">
+                    <div class="event-title">🍂 Harvest Afternoon Tea</div>
+                    <div class="event-date">🗓️ November 8, 2025 | 🕐 1pm – 3pm</div>
+                </div>
+                
+                <div class="event-item">
+                    <div class="event-title">🌸 Spring Afternoon Tea</div>
+                    <div class="event-date">🗓️ March 2026 (Date TBA)</div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="#" class="cta-button">🔔 Click here to get notified when tickets go on sale</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Follow Us Online -->
+        <section class="section">
+            <h2>📱 Follow Us Online!</h2>
+            <div class="social-links">
+                <a href="https://www.facebook.com/search/top?q=dbe%20of%20arizona" target="_blank">📘 DBE of Arizona – Facebook</a>
+                <a href="https://www.instagram.com/dbe_az_stpauls" target="_blank">📸 St Paul's Chapter of Arizona – Instagram</a>
+            </div>
+        </section>
+
+        <!-- Learn More -->
+        <section class="section">
+            <h2>🌐 Want to Learn More?</h2>
+            <div class="social-links">
+                <a href="https://www.dbenational.org/arizona" target="_blank">DBE Chapters in Arizona</a>
+                <a href="https://www.dbenational.org/states" target="_blank">Find a DBE Chapter Near You</a>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section">
+            <h2>Contact Us</h2>
+            <div class="contact-section">
+                <p><strong>Email:</strong> <a href="mailto:info@dbeaz.org">info@dbeaz.org</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>🧵 © 2025 St Paul's Chapter, DBE of Arizona. All rights reserved.</p>
+    </footer>
+</body>
+</html>
