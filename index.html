@@ -1,73 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saint Paul's Chapter - Daughters of the British Empire</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>DBE in the USA</title>
+    <meta name="description" content="Since 1909, the Daughters of the British Empire (DBE) is a nonprofit, philanthropic, American society of women with British and Commonwealth of Nations heritage sharing culture, friendship, and charity while supporting our senior living facilities, scholarship, and local charities.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="DBE in the USA_files/Website+Logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" type="text/css" href="DBE in the USA_files/site.css">
+    <link rel="stylesheet" type="text/css" href="DBE in the USA_files/5fc7a936d9b12c49-min.en-US.css">
+    
+    <!-- Font Loading -->
+    <script>document.documentElement.classList.add('wf-loading')</script>
+    <style>@keyframes fonts-loading { 0%, 99% { color: transparent; } } html.wf-loading * { animation: fonts-loading 3s; }</style>
+    
     <style>
+        /* Reset and base styles */
         body {
+            background-color: #fff;
+            color: #333;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+        }
+        
+        /* Simple navigation styles */
+        .simple-nav {
+            background: #fff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            min-height: 100vh;
+            padding: 0 2rem;
         }
-        .container {
+        .logo img {
+            height: 60px;
+        }
+        .nav-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .nav-menu li {
+            position: relative;
+        }
+        .nav-menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 1rem 1.5rem;
+            display: block;
+            font-weight: 500;
+        }
+        .nav-menu a:hover {
+            color: #666;
+        }
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #fff;
+            border: 1px solid #eee;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            min-width: 200px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        .nav-menu li:hover .dropdown {
+            opacity: 1;
+            visibility: visible;
+        }
+        .dropdown a {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #f5f5f5;
+        }
+        .dropdown a:last-child {
+            border-bottom: none;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .hero-image {
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            object-fit: contain;
+            margin-bottom: 2rem;
+        }
+        .motto {
             text-align: center;
-            background-color: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            margin: 20px;
-        }
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-            font-size: 2.2em;
-        }
-        h2 {
-            color: #34495e;
-            margin-bottom: 30px;
-            font-weight: normal;
-            font-size: 1.4em;
-        }
-        .coming-soon {
-            color: #7f8c8d;
-            font-size: 1.2em;
-            margin-bottom: 20px;
+            font-size: 2rem;
+            margin: 2rem 0;
+            color: #333;
         }
         .description {
-            color: #5d6d7e;
+            font-size: 1.1rem;
             line-height: 1.6;
-            margin-bottom: 30px;
+            margin-bottom: 2rem;
         }
-        .contact {
-            color: #85929e;
-            font-size: 0.9em;
+        .footer {
+            background: #f8f8f8;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 4rem;
+            border-top: 1px solid #eee;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Daughters of the British Empire</h1>
-        <h2>Saint Paul's Chapter</h2>
-        
-        <div class="coming-soon">
-            <strong>Website Coming Soon</strong>
+    <!-- Navigation -->
+    <nav class="simple-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="DBE in the USA_files/Website+Logo.png" alt="DBE Logo">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li>
+                    <a href="#chapters">Chapters</a>
+                    <ul class="dropdown">
+                        <li><a href="stpauls/index.html">Saint Pauls</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content">
+        <!-- Hero Image -->
+        <img src="DBE in the USA_files/masthead+[gill+sans].png" alt="DBE Masthead" class="hero-image">
         
+        <!-- Motto -->
+        <h1 class="motto">"Not Ourselves but the Cause"</h1>
+        
+        <!-- Description -->
         <div class="description">
-            We are currently working on our new website to better serve our members and community. 
-            Please check back soon for updates on our activities, events, and charitable initiatives.
+            <p>The DBE is a 501(c)(3) non-profit American society of women of British and <a href="https://thecommonwealth.org/our-member-countries" target="_blank">Commonwealth of Nations</a> birth or ancestry. We share and promote our heritage while supporting local charities and our senior living facilities across the United States.</p>
         </div>
         
-        <div class="contact">
-            Thank you for your patience.
-        </div>
-    </div>
+        <!-- Additional Content Sections -->
+        <hr>
+        
+        <h2 style="text-align:center;">We Stand for Inclusivity</h2>
+        <p>Through every change in our 110+ year history, we have known one constant - our sisterhood standing hand in hand. Women of all races, nationalities, creeds, colors, faiths, and beliefs stand together here in friendship and charity. Joined by our common bond of the Commonwealth of Nations, we learn from each other and grow closer together through every struggle our world faces. It is this truth that has laid the foundation of our first century. What will you bring to our second?</p>
+        
+        <hr>
+        
+        <h2 style="text-align:center;">SCHOLARSHIPS</h2>
+        <p style="text-align:center;">For information about the Sarah Josephine Langstaff Memorial Scholarship program <a href="#" target="_blank">click here</a></p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p><em>The DBE: Daughters of the British Empire in the USA, Inc. is not responsible in any manner for direct or indirect damages, howsoever caused, arising out of, or from, the use of this website, or the reliance on the information it contains. Links to other websites or references to products, services, or publications do not imply the endorsement or approval of such websites, products, services, or publications.</em></p>
+        <p><em>Please note: We like to take lots of photos at our DBE events. Some photos may be posted to our social media, to our website, or appear in other publications. If you would prefer not to be photographed, please excuse yourself from any group shots.</em></p>
+    </footer>
 </body>
 </html>
