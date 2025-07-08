@@ -1,0 +1,307 @@
+/* Optimized CSS - Contains only styles actually used by the website */
+
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navigation styles */
+.simple-nav {
+    background: #fff;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 1rem 1.5rem;
+    display: block;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    color: #666;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.nav-menu li:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown a {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.dropdown a:last-child {
+    border-bottom: none;
+}
+
+/* Main content styles */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    margin-bottom: 2rem;
+}
+
+.motto {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: #333;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* St Paul's specific styles */
+.back-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: #666;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: #333;
+}
+
+.chapter-header {
+    text-align: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 3rem 2rem;
+    margin: -2rem -2rem 3rem -2rem;
+    border-radius: 0 0 20px 20px;
+}
+
+.chapter-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.chapter-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.dbe-motto {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.section {
+    margin: 3rem 0;
+}
+
+.section h2 {
+    color: #333;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-section {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+.group-photo {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.group-photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.fundraiser-highlight {
+    background: #e8f5e8;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 5px solid #4CAF50;
+    margin: 2rem 0;
+}
+
+.support-section {
+    background: #fff3e0;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 5px solid #ff9800;
+}
+
+.support-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.support-section li {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.support-section li:before {
+    content: "✅";
+    position: absolute;
+    left: 0;
+}
+
+.events-section {
+    background: #f0f8ff;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 5px solid #2196F3;
+}
+
+.event-item {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.event-title {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.event-date {
+    color: #666;
+    font-weight: bold;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem 0;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #45a049;
+    color: white;
+}
+
+.social-links {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    background: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #e0e0e0;
+}
+
+.contact-section {
+    text-align: center;
+    background: #f5f5f5;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/* For main page footer */
+.footer {
+    background: #f8f8f8;
+    color: #333;
+    border-top: 1px solid #eee;
+}
+
+/* Override for St Paul's page footer */
+body .footer {
+    background: #333;
+    color: white;
+    border-top: none;
+}
